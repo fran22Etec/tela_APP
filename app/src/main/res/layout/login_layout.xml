@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="@drawable/wall2"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".Login_Activity">
 
 
@@ -16,37 +16,93 @@
         android:src="@drawable/logo1" />
 
 
-
     <com.google.android.material.textfield.TextInputLayout
-        app:startIconDrawable="@drawable/baseline_person"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="#fff"
-        android:hint="Insert e-mail">
+        android:layout_margin="10dp"
+        android:hint="User Name"
+        android:textColorHint="@color/white"
+        app:startIconDrawable="@drawable/baseline_person">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#6750A2"
+            android:background="@drawable/form"
+
 
             />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        app:startIconDrawable="@drawable/baseline_key"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="#fff"
-        android:hint="Insert password">
+        android:layout_margin="10dp"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        app:startIconDrawable="@drawable/baseline_key">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#6750A2"
+            android:background="@drawable/form"
 
             />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:checked="false"
+        android:text="Remember Password"
+        android:textColor="#fff" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Sign up" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:text="Forget Password?">
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:padding="1dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Don't have account?">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:textColor="#fff"
+        android:padding="1dp"
+
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Sign up">
 
 
 </LinearLayout>
